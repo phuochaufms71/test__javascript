@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, a, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.container {
+    margin-top: 50px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-action {
+    font-size: 1.8rem;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #54b5a8;
+    width: 40%;
+}
+
+.heading-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-subject {
+    display: flex;
+    column-gap: 10px;
+}
+
+.group-btn {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+
+.btn {
+    min-width: 100px;
+    background-color: #2979ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.delete {
+    background-color: #ff2946;
+}
+
+.btn.save {
+    background-color: #02a002;
+}
+
+.btn.edit {
+    background-color: #ffa929;
+}
+
+.form-render {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+thead, th, td {
+    padding: 6px;
+}
+
+th {
+    height: 50px;
+    background-color: #54b5a8;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.group-btn-table {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.btn-table {
+    min-width: 60px;
+    padding: 5px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="renderStudent()">
+    <div class="container">
+        <h1 class="heading">Quản lý sinh viên</h1>
+        <div class="form">
+            <div class="form-action">
+                <h2 class="heading-form">Thông tin sinh viên</h2>
+                <form action="" id="form-control-student">
+                   <div class="form-group">
+                        <label for="student__id">Mã sinh viên:</label>
+                        <input type="text" id="student__id">
+                   </div>
+                    <div class="form-group">
+                        <label for="name">Tên sinh viên:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email sinh viên:</label>
+                        <input type="text" id="email">
+                    </div>
+                   <div class="form-subject">
+                       <div class="form-group">
+                            <label for="math">Điểm Toán:</label>
+                            <input type="text" id="math">
+                       </div>
+                        <div class="form-group">
+                            <label for="physic">Điểm Lý:</label>
+                            <input type="text" id="physic">
+                        </div>
+                        <div class="form-group">
+                            <label for="chemical">Điểm Hóa:</label>
+                            <input type="text" id="chemical">
+                        </div>
+                   </div>
+                    <div class="form-group">
+                        <input id="index" type="hidden">
+                    </div>
+                </form>
+                <div class="group-btn">
+                    <button class="btn" onclick="addNewStudent()">Add</button>
+                    <button class="btn delete" onclick="resetStudent()">Delete All</button>
+                    <button class="btn save" onclick="updateStudent()">Save</button>
+                </div>
+            </div>
+            <div class="form-render">
+                <table style="border-collapse: collapse;" >
+                    <thead>
+                        <tr>
+                            <th>Mã sinh viên</th>
+                            <th>Tên sinh viên</th>
+                            <th>Email sinh viên</th>
+                            <th>Điểm trung bình</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
